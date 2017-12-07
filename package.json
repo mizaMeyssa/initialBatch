@@ -1,0 +1,13 @@
+{
+  "name": "initialBatch",
+  "version": "1.0.0",
+  "description": "The initial batch workflow runner is node.js based javascript toolset that allows parsing csv formatted data files and write their content into database. It doesn’t append data. It is designed to work on a fresh database. ",
+  "main": "init-1.js",
+  "author": "Maissa Jabri",
+  "license": "ISC",
+  "devDependencies": {
+    "fast-csv": "^2.4.1",
+    "jsonfile": "^4.0.0",
+    "pg": "^7.0.0"
+  }
+}
