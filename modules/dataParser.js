@@ -22,14 +22,13 @@ var parseDataStructure = function(input, output, record_parser) {
         .on("end", function(){
             // @Maissa: headers option in fast-csv doesn't work as well, so I had to shift the first item..
             dataStructure.shift();
-            jsonfile.writeFile(output, dataStructure, function (err) {
+            output ? jsonfile.writeFile(output, dataStructure, function (err) {
                 if (!err) { 
                    resolve(dataStructure);
                 } else {
                    reject(err);
                 }
-            })
-            return dataStructure;
+            }) : resolve(dataStructure);
         });
 
     })
