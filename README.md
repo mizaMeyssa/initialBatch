@@ -85,7 +85,7 @@ var user_sql_callback = function(dataStructure) {
 }
 ```
 * Now that you have all your data bundles js files ready, you need to gather them in a single file that runs them sequentially. in ./initial-batch.sh you can do so by adding what follows
-```
+``` Shell
 #!/bin/sh
 
 #Set environment variables 
